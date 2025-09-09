@@ -1,0 +1,209 @@
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    /* overflow: hidden; */
+    background-color: whitesmoke;
+    color: #222;
+    font-family: poppins, sans-serif;
+    overflow-x: hidden;
+}
+    
+canvas {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+section {
+    width: 100%;
+    /* position: relative; */
+}
+
+#hero {
+    height: 100vh;
+}
+
+#center-part {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+#center-part h1 {
+    font-size: 150px;
+    color: #222;
+    overflow: hidden;
+}
+
+#center-part h1 span {
+    display: inline-block;
+}
+
+#center-part h3 {
+    font-size: 100px;
+    color: crimson;
+}
+
+#center-part p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#center-part p span {
+    color: crimson;
+    font-weight: 700;
+}
+
+#center-part button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#center-part button:hover {
+    color: crimson;
+    background-color: rgb(223, 217, 217);
+    border: 2px solid crimson;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+#move {
+    background-color: #ff9d9d;
+    display: flex;
+    padding: 2px 2px;
+    overflow: hidden;
+}
+
+.marque {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding: 0 1.5vw;
+    transform: translateX(-100%);
+}
+
+.marque img {
+    height: 50px;
+}
+
+.marque h1 {
+    font-size: 30px;
+    font-family: poppins;
+    font-weight: 100;
+}
+
+#benefits {
+    /* height : 100vh; */
+    padding: 120px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#page2-intro {
+    text-align: center;
+    width: 70vw;
+}
+
+#page2-intro h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+#page2-intro p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #222;
+}
+
+#card-container {
+    height: 90vh;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+#card-container .elem {
+    /* background-color: #222; */
+    flex-shrink: 0;
+    height: 220px;
+    width: 48%;
+    border: 3px solid #222;
+    border-radius: 50px;
+    box-shadow: 0px 7px 0px rgb(27, 27, 27);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.white-elem{
+    background-color: #ffffff;
+    color: #111;
+    backdrop-filter: blur(2px);
+}
+
+.black-elem {
+    background-color: #333333;
+    color: white;
+    backdrop-filter: blur(2px);
+}
+
+#page3 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#page3 h3 {
+    color: #222;
+    font-size: 3.8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 40px 100px;
+    overflow: hidden;
+}
+
+footer {
+    height: 12vh;
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+    position:fixed;
+    bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 100%;
+}

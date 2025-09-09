@@ -1,0 +1,164 @@
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Light.ttf);/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+canvas {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+section {
+    width: 100vw;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutServices {
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+#aboutServices h3 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+#aboutServices p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container{
+    /* height: 100%; */
+    width: 100%;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    gap: 40px;
+}
+
+.container .elem{
+    flex-shrink: 0 ;
+    height: 220px;
+    width: 48%;
+    border: 3px solid black;
+    border-radius: 50px;
+    box-shadow: 0px 7px 0px rgb(27, 27, 27);
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+
+.black-elem{
+    background-color: black;
+    color: white;
+}
+.box5{
+    background-image: linear-gradient(to bottom right,#000, #111, #333, rgb(201, 199, 199));
+    color: aliceblue;
+    margin-left: 25%;
+}
+
+.white-h2{
+    font-family: china;
+    width: 75%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #ff819a ;
+}
+
+.black-h2{
+    font-family: china;
+    width: 75%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #fff ;
+    color: #111;
+}
+
+h4{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+h4 .i-black{
+    background-color: #111;
+    color: #fff;
+    padding: 3px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50%;
+}
+
+h4 .i-white{
+    background-color: #fff;
+    color: #111;
+    padding: 3px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50%; 
+}
+
+.elem h4:hover{
+    color: crimson;
+    font-weight: 900;
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+}
+
+.elem h4 i:hover{
+    transform: rotate(45deg);
+    transition: 0.3s ease-in-out;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+    bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 100%;
+}

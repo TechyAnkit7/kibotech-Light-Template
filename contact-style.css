@@ -1,0 +1,188 @@
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    background-color: whitesmoke;
+    color: #252525;
+    overflow-x: hidden;
+}
+
+canvas {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+#aboutContact {
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+#aboutContact h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#aboutContact p {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    color: #303030;
+}
+
+.container{
+    padding: 48px 100px;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left {
+    padding-top: 20px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.right {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    flex-basis: 55%;
+}
+
+.left p {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.left p i {
+    color: #ff004f;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    /* color: #ababab; */
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.icons a:hover {
+    color: #ff004f;
+    transform: scale(0.8, 0.8);
+}
+
+.btn {
+    border: 2px solid black;
+    border-radius: 5px;
+    color: rgb(241, 233, 233);
+    text-decoration: none;
+    background-color: #ff004f;
+    padding: 5px;
+    margin: 15px 5px;
+    display: inline-block;
+}
+
+.right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #000000c0;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: #c7c7c7;
+    font-weight: 500;
+}
+
+form .btn {
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #222;
+    
+}
+
+form .btn:hover {
+    color: crimson;
+    background-color: rgb(223, 217, 217);
+    border: 2px solid crimson;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.fa-linkedin-in {
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    padding: 4px;
+    border-radius: 5px;
+
+}
+
+.fa-github {
+    color: #000000;
+    transition-delay: all 0.5s;
+}
+
+.fa-instagram {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+    padding: 4px;
+    border-radius: 10px;
+}
+
+footer {
+    height: 8vh;
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+    bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 100%;
+}
