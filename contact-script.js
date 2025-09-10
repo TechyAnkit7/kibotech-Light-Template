@@ -49,4 +49,11 @@ function page1_Animation() {
     })
 }
 
+const form = document.getElementById('contactForm');
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            alert('Thank you for contacting us. We will get back to you shortly!');
+            form.reset();
+        });
+
 page1_Animation()
