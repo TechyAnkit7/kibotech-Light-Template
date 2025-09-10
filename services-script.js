@@ -43,40 +43,41 @@ function card_page() {
             scroller: "body",
             start: "top 60%",
             scrub: 3,
-            end: "top -30%",
+            end: "top -10%",
         }
     })
 
     tl2.from(".container .box1", {
         x: -200,
         opacity: 0,
-        duration: 2
+        duration: 0.7
     }, "anime1")
 
     tl2.from(".container .box2", {
         x: 200,
         opacity: 0,
-        duration: 2
+        duration: 0.7
     }, "anime1")
 
     tl2.from(".container .box3", {
         x: -200,
         opacity: 0,
-        duration: 1
-    }, "anime1")
+        duration: 0.7
+    }, "anime2")
 
     tl2.from(".container .box4", {
         x: 200,
         opacity: 0,
-        duration: 1
-    }, "anime1")
+        duration: 0.7
+    }, "anime2")
 
     tl2.from(".container .box5", {
         y: 300,
         opacity: 0,
-        duration: 1
-    }, "anime1")
+        duration: 0.7
+    }, "anime2")
 }
 
 page1_Animation()
+
 card_page()
